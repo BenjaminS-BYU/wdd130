@@ -1,4 +1,4 @@
-nav,footer {
+nav{
     background-color: darkblue;
     padding: 10px;
 }
@@ -12,6 +12,7 @@ main{
     padding: 5px
 }
 nav a {
+    background-color: darkblue;
     color: white;
     display: block;
     padding: 5px;
@@ -50,6 +51,8 @@ aside img {
 }
 
 footer {
+    background-color: darkblue;
+    padding: 10px;
     margin-top: 0px auto;
     border-top: 0px;
     color: white;
