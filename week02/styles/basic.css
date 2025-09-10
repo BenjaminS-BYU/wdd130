@@ -4,11 +4,12 @@ nav,footer {
 }
 
 body {
-    margin: 100 auto;
+    margin: 0px auto;
 }
 
 main{
     max-width: 840px;
+    padding: 5px
 }
 nav a {
     color: white;
@@ -17,9 +18,10 @@ nav a {
 }
 h1 {
     color: darkblue;
+    font-size: 50px;
 }
 main img {
-    width: 150;
+    width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -38,15 +40,15 @@ aside {
     color: darkblue;
 }
 
-p { padding: 0;}
+aside p { padding: 0;}
 
-img {
+aside img {
     width: 200px;
     height: auto;
 }
 
 footer {
-    margin: 300px auto;
+    margin: 0px auto;
     color: white;
     text-align: center;
 }
