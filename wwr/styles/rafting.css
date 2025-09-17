@@ -73,7 +73,7 @@ h1 {
     color: var(--color-text);
 }
 
-.hero article p {
+.hero article {
     position: absolute;
     bottom: 10px;
     left: 10px;
