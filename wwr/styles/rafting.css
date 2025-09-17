@@ -87,5 +87,5 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    box-shadow: var(--shadow-color) 5px 5px 5px;
+    box-shadow: 0 0 50px var(--shadow-color);
 }
