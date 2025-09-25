@@ -4,8 +4,6 @@
   --color-accent: #1e293b;      /* Dark slate for highlights */
   --color-background: #0f172a;  /* Deep navy background */
   --color-text: #f8fafc;        /* Soft off-white text */
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'Roboto', sans-serif;
   --shadow-color: rgba(0, 0, 0, 0.4);
 }
 
