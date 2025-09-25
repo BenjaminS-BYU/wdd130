@@ -72,6 +72,9 @@ h2 {
   width: 100%;
 }
 
+article img {
+    padding: 5px;
+}
 
 .history {
     display: grid;
@@ -91,12 +94,11 @@ h2 {
 .history p {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
 }
 
 .adventure {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -106,12 +108,22 @@ h2 {
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-around;
+    gap: 16px;
+}
+
+.adventure-gallery img {
+    aspect-ratio: 7 / 5;
+    width: 100%;
+    object-fit: fill;
+    padding: 10px;
 }
 
 
-
-
+.adventure-gallery figcaption {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+}
 
 nav,
 p,
