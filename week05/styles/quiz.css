@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: var(--body-font);
+}
+
+/* Minimal & Calm (Greens/Neutrals) */
+:root {
+  --color-primary: #16a34a;      /* Fresh green */
+  --color-secondary: #4ade80;   /* Light green */
+  --color-accent: #dcfce7;      /* Pale mint */
+  --color-background: #f8fafc;  /* Neutral light gray */
+  --color-text: #0f172a;        /* Dark slate */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --shadow-color: rgba(15, 23, 42, 0.15);
+}
+
+main {
+    max-width: 500px;
+    margin:  1rem;
+    border: var(--color-accent);
+    padding: 1rem;
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+h1 {
+    margin: .5rem;
+}
+
+form {
+    margin: 1rem;
+    border: 1px solid var(--color-accent);
+    padding: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+input,
+textarea,
+select {
+    padding: .75rem;
+    min-width: 350px;
+}
+
+button {
+    padding: .5rem;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+}
+
+code {
+    display: block;
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+.box {
+    max-width: 500px;
+    margin:  1rem;
+    padding: 1rem;
+}
+
+.quiz-item {
+    border: none;
+}
