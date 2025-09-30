@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font: var(--body-font);
+    font-size: 20px;
+}
+
+/* Warm & Friendly (Oranges/Reds) */
+:root {
+  --color-primary: #ea580c;      /* Vibrant orange */
+  --color-secondary: #f97316;   /* Bright tangerine */
+  --color-accent: #ffedd5;      /* Creamy peach */
+  --color-background: #fff7ed;  /* Warm off-white */
+  --color-text: #431407;        /* Deep warm brown */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --shadow-color: rgba(67, 20, 7, 0.15);
+}
+
+header {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--color-accent);
+    font-size: 3rem;
+    color: var(--color-text);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 650px;
+    height: auto;
+}
+
+
+
+button {
+    background-color: var(--shadow-color);
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    grid-row: 4;
+}
+
+.contact {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+.questions {
+    padding: 5px;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.questions label {
+    display: flex;
+    justify-content: end;
+}
