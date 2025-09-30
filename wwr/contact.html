@@ -24,96 +24,93 @@
         </nav>
     </header>
     <main>
-
-        <body>
-            <section>
-                <div class="companyinfo">
-                    <h1>Rafting Company Co.</h1>
-                    <p>123 Main River Street</p>
-                    <p>Kolob, California</p>
-                    <p>+1 999 999 9999</p>
-                    <p>info@raftingco.com</p>
+        <section>
+            <div class="companyinfo">
+                <h1>Rafting Company Co.</h1>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p>info@raftingco.com</p>
+            </div>
+        </section>
+        <section class="contact-details">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.6198373904285!2d-122.0744641!3d38.2651222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808516af083847c1%3A0xe40c43fb5f1dea2f!2sKolob%20Way%2C%20Fairfield%2C%20CA%2094534%2C%20USA!5e0!3m2!1sen!2sca!4v1759263722664!5m2!1sen!2sca"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <div class="namebox">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith">
                 </div>
-                <section class="contact-details">
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.6198373904285!2d-122.0744641!3d38.2651222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808516af083847c1%3A0xe40c43fb5f1dea2f!2sKolob%20Way%2C%20Fairfield%2C%20CA%2094534%2C%20USA!5e0!3m2!1sen!2sca!4v1759263722664!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="johnsmith@gmail.com">
+                </div>
+                <div class="message-purpose">
+                    <p>Message Purpose</p>
+                    <div>
+                        <input type="radio" name="purpose" id="general-inquiry" value="General Inquiry">
+                        <label for="general-inquiry">General Inquiry</label>
                     </div>
-                    <form>
-                        <div class="namebox">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="John Smith"></label>
-                        </div>
-                        <div class="email">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="johnsmith@gmail.com"></label>
-                        </div>
-                        <div class="message-purpose">
-                            <p>Message Purpose</p>
-                            <div>
-                                <input type="radio" name="purpose" id="general-inquiry" value="General Inquiry" />
-                                <label for="general-inquiry">General Inquiry</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="purpose" id="reservation-question"
-                                    value="Reservation Question" />
-                                <label for="reservation-question">Reservation Question</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="purpose" id="website-suggestion" value="Website Suggestion" />
-                                <label for="website-suggestion">Website Suggestion</label>
-                            </div>
-                        </div>
-                        <div class="message-field"></div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Type here"></textarea>
-                        </div>
-                        <div class="checkbox">
-                            <label for="letter">Please Subscribe me to the monthly newsletter</label>
-                            <input type="checkbox" name="letter" id="letter">
-                        </div>
-                        <button type="submit">Get in Touch!</button>
-                    </form>
-                </section>
-
-                <section class="workers">
-                    <h2>We Are Here to Serve You</h2>
-                    <div class="worker-gallery">
-                        <figure>
-                            <img class="adventure-img-1" src="/wwr/images/worker-images/female-worker.webp"
-                                alt="female worker guiding a troop" width="270">
-                            <figcaption>Our workers are the best.</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="adventure-img-1" src="/wwr/images/worker-images/male-worker.webp"
-                                alt="male worker guiding" width="270">
-                            <figcaption>Their experience is unmatched.</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="adventure-img-1" src="/wwr/images/worker-images/male-worker2.webp"
-                                alt="other male guiding" width="270">
-                            <figcaption>With safety guaranteed like no other.</figcaption>
-                        </figure>
+                    <div>
+                        <input type="radio" name="purpose" id="reservation-question" value="Reservation Question">
+                        <label for="reservation-question">Reservation Question</label>
                     </div>
-                </section>
-        </body>
-    </main>
-    <footer>
-        <p>&copy; 2025 Benjamin Strong</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com">
-                <img src="images/facebook_img.png" alt="Facebook Logo" width="60" height="60">
-            </a>
-            <a href="https://www.linkedin.com/feed">
-                <img src="images/linkedin_img.png" alt="Linkdin Logo" width="60" height="60">
-            </a>
-            <a href="https://www.instagram.com">
-                <img src="images/instagram_img.png" alt="Instagram Logo" width="60" height="60">
-            </a>
-        </nav>
-    </footer>
+                    <div>
+                        <input type="radio" name="purpose" id="website-suggestion" value="Website Suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="message-field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Type here"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label for="letter">Please Subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" name="letter" id="letter">
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+        <section class="workers">
+            <h2>We Are Here to Serve You</h2>
+            <div class="worker-gallery">
+                <figure>
+                    <img class="adventure-img-1" src="/wwr/images/worker-images/female-worker.webp"
+                        alt="female worker guiding a troop" width="270">
+                    <figcaption>Our workers are the best.</figcaption>
+                </figure>
+                <figure>
+                    <img class="adventure-img-1" src="/wwr/images/worker-images/male-worker.webp"
+                        alt="male worker guiding" width="270">
+                    <figcaption>Their experience is unmatched.</figcaption>
+                </figure>
+                <figure>
+                    <img class="adventure-img-1" src="/wwr/images/worker-images/male-worker2.webp"
+                        alt="other male guiding" width="270">
+                    <figcaption>With safety guaranteed like no other.</figcaption>
+                </figure>
+            </div>
+        </section>
+</body>
+</main>
+<footer>
+    <p>&copy; 2025 Benjamin Strong</p>
+    <nav class="socialmedia">
+        <a href="https://www.facebook.com">
+            <img src="images/facebook_img.png" alt="Facebook Logo" width="60" height="60">
+        </a>
+        <a href="https://www.linkedin.com/feed">
+            <img src="images/linkedin_img.png" alt="Linkdin Logo" width="60" height="60">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/instagram_img.png" alt="Instagram Logo" width="60" height="60">
+        </a>
+    </nav>
+</footer>
 </body>
 
 </html>
