@@ -176,7 +176,6 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0 10px 10px 0; /* optional for rounded right edge */
   box-sizing: border-box;
   text-align: center;
 }
@@ -187,6 +186,7 @@ footer p {
 
 .hero-home img {
   width: 100%;
+  display: block;
 }
 
 .hero {
