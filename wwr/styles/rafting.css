@@ -157,6 +157,38 @@ footer p {
   align-items: flex-end;
 }
 
+.hero-home {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* takes up half the image */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent overlay */
+  color: var(--color-text);
+  padding: 70px;
+  display: flex; /* centers text nicely */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0; /* optional for rounded right edge */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.img-overlay button {
+  width: 100px;
+}
+
+.hero-home img {
+  width: 100%;
+}
+
 .hero {
   position: relative;
 }
