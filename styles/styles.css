@@ -6,17 +6,20 @@
 }
 
 :root {
-    --darkblue: darkblue;
-    --lightgray: lightgray;
-    --white: white;
     --black: black;
+    --color-primary: #0ea5e9;      /* Electric blue */
+    --color-secondary: #38bdf8;   /* Sky cyan */
+    --color-accent: #1e293b;      /* Dark slate for highlights */
+    --color-background: #0f172a;  /* Deep navy background */
+    --color-text: #f8fafc;        /* Soft off-white text */
+    --shadow-color: rgba(0, 0, 0, 0.4);
 }
 
 /* LAYOUT CONTAINERS */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--white);
-    color: var(--darkblue);
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 header, .grid, footer {
@@ -28,7 +31,7 @@ header, .grid, footer {
 
 /* NAVIGATION */
 nav {
-    background-color: var(--darkblue);
+    background-color: var(--color-accent);
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: var(--white);
+    color: var(--color-text);
     display: block;
     padding: 0.5rem;
     font-size: 1.2rem;
@@ -78,11 +81,11 @@ aside {
     text-align: center;
     border: 1px solid var(--black);
     padding: 20px;
-    background-color: var(--lightgray);
 }
 
 aside h2 {
     margin-bottom: 1rem;
+    color: var(--color-text);
 }
 
 aside img {
@@ -95,23 +98,31 @@ aside img {
     margin: 1rem 0;
     border: 1px solid var(--black);
     padding: 1.5rem;
-    background-color: var(--lightgray);
-    color: var(--darkblue);
+    background-color: var(--color-accent);
+    color: var(--color-text);
 }
+
+li, li a {
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
 
 ul.box {
     width: 100%;
+    padding: 3rem;
 }
 
 aside.box {
     width: 100%;
+    color: var(--color-text);
 }
 
 /* HEADINGS & PARAGRAPHS */
 h1 {
-    color: var(--darkblue);
+    color: var(--color-text);
     font-size: 35px;
-    border-bottom: 2px solid var(--darkblue);
+    border-bottom: 2px solid var(--color-text);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -124,6 +135,6 @@ p {
 footer {
     padding: 10px;
     margin-top: 1rem;
-    color: var(--darkblue);
+    color: var(--color-text);
     text-align: center;
 }
