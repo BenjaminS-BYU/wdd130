@@ -301,3 +301,109 @@ button:hover {
 .message-purpose div {
   grid-column: 2;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: var(--color-accent);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin-left: auto;
+}
+
+form p {
+  font-size: 20px;
+  padding: 0;
+}
+form input {
+  font-size: 1.1rem;
+}
+
+
+form button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.hero-section {
+  display: flex;
+}
+
+.hero-section img {
+  width: 100%;
+  border-radius: 12px;
+
+}
+
+.img-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.img-info figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.img-info figure:hover {
+  transform: translateY(-5px);
+}
+
+.img-info img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 4px solid #e6d8b8; /* light tan border like the reference */
+  box-shadow: 0 0px 10px var(--shadow-color);
+  
+}
+
+.img-info figcaption {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4a4a3f;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.img-info .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+  filter: invert(50%) sepia(20%) saturate(300%) hue-rotate(50deg) brightness(1.2);
+}
+
+
