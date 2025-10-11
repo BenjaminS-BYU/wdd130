@@ -286,7 +286,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
 }
 
 form {
@@ -315,7 +315,6 @@ form input {
 form button {
   font-size: 1rem;
   background: var(--color-primary);
-  color: var(--color-text);
   border-radius: 0.5rem;
   display: inline-block;
   font-weight: bold;
@@ -336,12 +335,13 @@ form button:hover {
 }
 
 .img-info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  justify-items: center;  
+  align-items: start;      
   gap: 3rem;
   margin: 3rem auto;
-  flex-wrap: wrap;
+  max-width: 1000px;       
 }
 
 .img-info figure {
@@ -360,6 +360,7 @@ form button:hover {
   box-shadow: 0 0 10px var(--shadow-color);
 }
 
+
 .img-info figcaption {
   margin-top: 1rem;
   color: var(--color-text);
@@ -374,6 +375,7 @@ form button:hover {
   margin-bottom: 0.5rem;
   filter: invert(50%) sepia(20%) saturate(300%) hue-rotate(50deg) brightness(1.2);
 }
+
 
 /* ===== Purpose Section ===== */
 .Purpose p {
@@ -391,22 +393,61 @@ form button:hover {
 .trip-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 2rem;
   background: linear-gradient(145deg, var(--color-accent), var(--color-background));
   box-shadow: 0 8px 25px var(--shadow-color);
-  font-size: 1.6rem;
   color: var(--color-text);
+  border-radius: 1rem;
+  max-width: 1000px;
+  margin: 3rem auto;
 }
 
-.trip-info img {
-  width: 220px;
-  border-radius: 1rem;
+.trip-info .top-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+.trip {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.trip-img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 1rem;
   border: 3px solid var(--color-primary);
   box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Chat GPT helped with this hover effect and I wanna keep it haha */
+.trip-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+.trip-text .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.trip-text .pp {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+
 
 .pp {
   font-size: 1.2rem;
@@ -471,8 +512,8 @@ a {
 }
 
 
-
 .btn {
+  color: black;
   width: 200px;
   height: 30px;
   font-size: 1.1rem;
@@ -488,3 +529,4 @@ a {
   background: var(--color-secondary);
   transform: translateY(-2px);
 }
+
