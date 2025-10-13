@@ -326,13 +326,35 @@ form button:hover {
 
 /* ===== Image Info Section ===== */
 .hero-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr; /* single column layout */
+  position: relative;
 }
 
 .hero-section img {
   width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 8px 25px var(--shadow-color);
   border-radius: 12px;
+  grid-column: 1 / -1; /* span entire grid width */
+  grid-row: 1 / -1; 
 }
+
+.hero-section form{
+  background: rgba(0, 0, 0, 0.9); /* semi-transparent background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  
+}
+
+.hero-section .overlay,
+.hero-section .email-form {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  place-self: center; /* centers content in the grid */
+}
+
 
 .img-info {
   display: grid;
