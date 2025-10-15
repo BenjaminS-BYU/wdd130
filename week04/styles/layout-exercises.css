@@ -26,21 +26,19 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .grid {
     background-color: #abb;
     display: grid;
-    place-items: center;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .container2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-
 }
 
 .two {
@@ -50,13 +48,12 @@ div {
 
 .container3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
 }
 
 .columns-3 {
-    grid-column: 1/4;
-
+    grid-column: span 3;
 }
 
 .three {
